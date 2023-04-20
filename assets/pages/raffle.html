@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daflogui Cake | Raffle</title>
+    <link rel="stylesheet" href="./../css/style.css" />
+    <link rel="shortcut icon" href="./../img/icon.png" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul class="links">
+          <li><a href="./../../index.html">Home</a></li>
+          <li><a href="./aboutUs.html">About Us</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li>
+            <a href="./benefitsTips.html">Benefits and Tips</a>
+          </li>
+          <li><a href="./information.html">Information</a></li>
+          <li><a href="#">Raffle</a></li>
+        </ul>
+        <img src="./../img/logo.png" alt="Daflogui Cake logo" />
+      </nav>
+    </header>
+    <main>
+      <section class="raffle">
+        <h1>Raffle</h1>
+        <h3>You can participate in a raffle. The prize is a coffee pot.</h3>
+        <div class="raffle-container">
+          <div class="raffle-images">
+            <img class="raffle-image" src="./../img/cup-coffee.jpg" alt="" />
+            <img class="raffle-image" src="./../img/cup-w-coffee.jpg" alt="" />
+          </div>
+          <form action="./show_data.html" method="get" class="raffle-form">
+            <fieldset class="raffle-box">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" name="first-name" />
+            </fieldset>
+            <fieldset class="raffle-box">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" name="last-name" />
+            </fieldset>
+            <fieldset class="raffle-box">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" />
+            </fieldset>
+            <fieldset class="raffle-box">
+              <label for="color"
+                >What color would you like the coffee pot:</label
+              >
+              <select name="color" id="color">
+                <option value="Black">Black</option>
+                <option value="White">White</option>
+                <option value="Gray">Gray</option>
+                <option value="Brown">Brown</option>
+              </select>
+            </fieldset>
+            <fieldset class="raffle-box">
+              <label for="country">Country:</label>
+              <select name="country" id="country">
+                <option value="ar">Argentina</option>
+                <option value="co">Colombia</option>
+                <option value="ch">Chile</option>
+              </select>
+            </fieldset>
+            <fieldset class="raffle-box">
+              <legend>Payment Options:</legend>
+              <div class="raffle-radio">
+                <input type="radio" id="cash" name="payment" value="cash" />
+                <label for="cash">Cash</label>
+              </div>
+              <div class="raffle-radio">
+                <input type="radio" id="credit" name="payment" value="credit" />
+                <label for="credit">Credit Card</label>
+              </div>
+              <div class="raffle-radio">
+                <input type="radio" id="debit" name="payment" value="debit" />
+                <label for="debit">Debit Card</label>
+              </div>
+            </fieldset>
+            <fieldset class="raffle-box">
+              <label for="services">Services</label>
+              <textarea
+                name="services"
+                id="services"
+                cols="20"
+                rows="6"
+              ></textarea>
+            </fieldset>
+            <fieldset class="raffle-box">
+              <div>
+                <input type="checkbox" name="accept" id="accept" />
+                <label for="accept">I accept terms and conditions...</label>
+              </div>
+            </fieldset>
+            <input class="raffle-submit" type="submit" value="Send" />
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.7793936713833!2d-58.4006040249723!3d-34.58444817296116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca9ef8c792ff%3A0x7cc6d5125f3e2685!2sBiblioteca%20Nacional%20Mariano%20Moreno!5e0!3m2!1ses!2sar!4v1681927512217!5m2!1ses!2sar"
+        class="footer-map"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </footer>
+  </body>
+</html>
